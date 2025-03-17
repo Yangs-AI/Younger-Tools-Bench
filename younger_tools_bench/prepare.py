@@ -360,7 +360,7 @@ def younger_prepare(bench_dirpath: pathlib.Path, dataset_dirpath: pathlib.Path) 
 def main(bench_dirpath: pathlib.Path, dataset_dirpath: pathlib.Path, version: str, direct: Literal['instance', 'onnx', 'both'] | None = None):
     assert version in SUPPORT_VERSION
     prepared = False
-    if version == 'younger':
+    if version == 'ylir':
         instances = younger_prepare(bench_dirpath, dataset_dirpath)
         prepared = True
 
