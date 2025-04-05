@@ -3,8 +3,8 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-include = ["younger_tools_bench"]
-exclude = ["test"]
+include = ["younger_tools_bench*"]
+exclude = ["test*"]
 
 [project]
 name = "Younger-Tools-Bench"
