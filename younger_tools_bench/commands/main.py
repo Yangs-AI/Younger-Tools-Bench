@@ -6,7 +6,7 @@
 # Author: Jason Young (杨郑鑫).
 # E-Mail: AI.Jason.Young@outlook.com
 # Last Modified by: Jason Young (杨郑鑫)
-# Last Modified time: 2025-03-17 17:29:57
+# Last Modified time: 2025-04-11 23:06:25
 # Copyright (c) 2025 Yangs.AI
 # 
 # This source code is licensed under the Apache License 2.0 found in the
@@ -16,7 +16,8 @@
 
 import click
 
-from younger_tools_bench.commands.analyze import analyze
+from younger_tools_bench.commands.sample import sample
+from younger_tools_bench.commands.generate import generate
 
 
 @click.group(name='younger-tools-bench')
@@ -24,7 +25,8 @@ def main():
     pass
 
 
-main.add_command(analyze, name='analyze')
+main.add_command(sample, name='sample')
+main.add_command(generate, name='generate')
 
 
 if __name__ == '__main__':

@@ -2,24 +2,26 @@
 # -*- encoding=utf8 -*-
 
 ########################################################################
-# Created time: 2024-12-24 09:08:22
+# Created time: 2024-11-27 15:51:12
 # Author: Jason Young (杨郑鑫).
 # E-Mail: AI.Jason.Young@outlook.com
 # Last Modified by: Jason Young (杨郑鑫)
-# Last Modified time: 2025-04-10 20:23:03
-# Copyright (c) 2024 - 2025 Yangs.AI
+# Last Modified time: 2025-04-10 20:21:30
+# Copyright (c) 2024 Yangs.AI
 # 
 # This source code is licensed under the Apache License 2.0 found in the
 # LICENSE file in the root directory of this source tree.
 ########################################################################
 
 
-import importlib.metadata
+import pathlib
 
-from younger.commons.constants import YoungerHandle
+from younger.commons.logging import set_logger, use_logger
+
+from younger_tools_bench import __thename__
 
 
-__version__ = importlib.metadata.version("younger_tools_bench")
+def equip_logger(logging_filepath: pathlib.Path | str | None = None):
+    set_logger(__thename__, mode='both', level='INFO', logging_filepath=logging_filepath)
+    use_logger(__thename__)
 
-
-__thename__ = YoungerHandle.ToolsName + '-' + 'Bench'

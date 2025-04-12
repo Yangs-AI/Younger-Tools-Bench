@@ -2,24 +2,15 @@
 # -*- encoding=utf8 -*-
 
 ########################################################################
-# Created time: 2024-12-24 09:08:22
+# Created time: 2025-04-11 23:12:56
 # Author: Jason Young (杨郑鑫).
 # E-Mail: AI.Jason.Young@outlook.com
 # Last Modified by: Jason Young (杨郑鑫)
-# Last Modified time: 2025-04-10 20:23:03
-# Copyright (c) 2024 - 2025 Yangs.AI
+# Last Modified time: 2025-04-11 23:13:01
+# Copyright (c) 2025 Yangs.AI
 # 
 # This source code is licensed under the Apache License 2.0 found in the
 # LICENSE file in the root directory of this source tree.
 ########################################################################
 
 
-import importlib.metadata
-
-from younger.commons.constants import YoungerHandle
-
-
-__version__ = importlib.metadata.version("younger_tools_bench")
-
-
-__thename__ = YoungerHandle.ToolsName + '-' + 'Bench'
