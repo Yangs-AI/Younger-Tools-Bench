@@ -47,6 +47,7 @@ dependencies = [
 [project.optional-dependencies]
 construct = ["torch-geometric"]
 develop = [
+    "pytest",
     "sphinx",
     "python-semantic-release"
 ]
